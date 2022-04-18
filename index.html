@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio do jogo</title>
+    <link rel="stylesheet" href="/style.css">
+    <script>
+        function nivelJogo() {
+
+            var nivel = document.getElementById('nivel').value
+
+
+            if (nivel === 'selecionar') {
+
+                alert('escolha um nivel')
+                return false
+
+            }
+
+            window.location.href = '/app.html?' + nivel
+
+
+        }
+    </script>
+</head>
+
+<body>
+
+
+    <div>
+        <h1> precisar impedir a serpente de falar com Eva </h1>
+
+    </div>
+
+
+
+    <div>
+        <Button onclick="nivelJogo()">
+    iniciar
+</Button>
+    </div>
+
+
+    <div id="seletor">
+        <select id="nivel">
+            <option value="selecionar"> --selecione o nivel</option>
+            <option value="facil">Facil</option>
+            <option value="normal">Normal</option>
+            <option value="dificil"> Dificil</option>
+
+        </select>
+
+    </div>
+
+</body>
+
+</html>

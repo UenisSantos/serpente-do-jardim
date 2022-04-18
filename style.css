@@ -1,0 +1,109 @@
+html {
+    cursor: pointer;
+}
+
+body {
+    background-image: url(/assets/arvore.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center
+}
+
+
+/* pagina perdeu e pagina ganhou*/
+
+h1 {
+    font-size: 6em;
+    color: white;
+}
+
+#seletor {
+    padding-top: 20px;
+    display: flex;
+    height: 3em;
+    width: 8.1em;
+    margin: auto auto;
+}
+
+#seletor select {
+    align-items: stretch;
+}
+
+.centro {
+    margin: auto auto;
+    background-image: url(/assets/eva.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 90px;
+    border: 1px solid red;
+    height: 38em;
+    width: 50%;
+    object-fit: cover;
+}
+
+.centro h2 {
+    color: white;
+    font-size: 32px;
+    background-color: green;
+    border-radius: 15px;
+}
+
+button {
+    height: 1.9em;
+    width: 9em;
+    border: 1px solid red;
+    background-color: rgb(216, 218, 219);
+    border-radius: 15px;
+    font-size: 2em;
+}
+
+button:hover {
+    background-color: green;
+    width: 9.5em;
+    height: 2em;
+}
+
+
+/*pagina principal do jogo*/
+
+.tamanho-mosquito-1 {
+    height: 20%;
+}
+
+.tamanho-mosquito-2 {
+    height: 10%;
+}
+
+.tamanho-mosquito-3 {
+    height: 30%
+}
+
+.virar-imagem-2 {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1)
+}
+
+.painel {
+    top: 20px;
+    right: 100px;
+    position: fixed;
+    opacity: 0.8;
+    width: 10%;
+}
+
+.tempo {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.vidas {
+    width: 20em;
+}
+
+#v1,
+#v2,
+#v3 {
+    width: 15%;
+}
